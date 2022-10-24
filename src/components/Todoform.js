@@ -16,10 +16,11 @@ function Todoform(props) {
         id: Math.floor(Math.random()*99999),
         text: input,
 
-    })
+    });
 
     setInput('');
-  }
+  };
+  
     return (
     <form className='todo-form' onSubmit={handleSubmit}>
         <input type='text'
