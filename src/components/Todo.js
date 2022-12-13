@@ -27,7 +27,11 @@ const Todo = ({ items, completeItem, removeItem, updateItem }) => {
       className={item.isComplete ? "item-row complete" : "item-row"}
       key={index}
     >
-      <div key={item.id} onClick={() => completeItem(item.id)}>
+      <div
+        style={{ userSelect: "none" }}
+        key={item.id}
+        onClick={() => completeItem(item.id)}
+      >
         {item.text}
       </div>
 
